@@ -14,5 +14,11 @@ pipeline {
                 bat 'python -m pytest'
             }
         }
+
+        stage('Package') {
+            steps {
+                bat 'powershell Compress-Archive -Path app.py,test_app.py -DestinationPath jenkins-python-demo.zip -Force'
+            }
+        }
     }
 }
