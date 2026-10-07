@@ -21,4 +21,10 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            archiveArtifacts artifacts: 'jenkins-python-demo.zip'
+        }
+    }
 }
