@@ -3,6 +3,6 @@ def add(a, b):
 
 
 if __name__ == "__main__":
-    print("Hello from my Jenkins application!")
-    print("Hello from my updated application!")
+    print("Lets see the automatic chngs shows or not if i push the code!")
+    print("Hello from my updated Jenkins application!")
     print("2 + 3 =", add(2, 3))
